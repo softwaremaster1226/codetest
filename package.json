@@ -1,0 +1,16 @@
+{
+  "name": "services",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "concurrently \"cd services/api && npm start\" \"cd services/ui && npm start\""
+  },
+  "workspaces": [
+    "services/*"
+  ],
+  "devDependencies": {
+    "concurrently": "^5.2.0"
+  }
+}
